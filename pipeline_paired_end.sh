@@ -1,4 +1,4 @@
-########################################
+
 child="$1" # Sample ID of the child
 father="$2" # Sample ID of the father
 mother="$3" # Sample ID of the mother
@@ -52,11 +52,11 @@ done #The loop ends here.
 
 # MultiQC report generation. 
 multiqc . -c multiqc_config.yaml -o QC_reports_"${CASE}" -f
-#mutliqc: '.' scans current folder, '-c' applies YAML grouping rules, '-o' sets output folder, '-f' overwrites old reports
+# mutliqc: '.' scans current folder, '-c' applies YAML grouping rules, '-o' sets output folder, '-f' overwrites old reports
 
-#From here, all the files (.bam, .cand.vcf, .vcf, .vcf.gz) are stored in the "VCF_results_case1_def1" folder.
+# From here, all the files (.bam, .cand.vcf, .vcf, .vcf.gz) are stored in the "VCF_results_case1_def1" folder.
 
-#We run freebayes with the following parameters:
+# We run freebayes with the following parameters:
 # -m = --min-mapping-quality > 20 (It excludes from the analysis alignments with a mapping quality < 20)
 # -C = --min-alternate-count > 5 (For an alternate alelle to be considered, it need at least 5 reads in an individual)
 #-Q = --mismatch-base-quality-threshold =>10 (It sets the minimum base quality required for a mismatch to be taken into account; mismatches supported by bases with quality < 10 are ignored))
