@@ -1,0 +1,7 @@
+# Generate coverage tracks for the Trio
+bedtools genomecov -ibam father.bam -bg -trackline -trackopts 'name="father"' -max 100 > fatherCov.bg
+bedtools genomecov -ibam mother.bam -bg -trackline -trackopts 'name="mother"' -max 100 > motherCov.bg
+bedtools genomecov -ibam child.bam -bg -trackline -trackopts 'name="child"' -max 100 > childCov.bg
+# these commands produce bed files that should be to the UCSC Genome Browser to check the coverage of the tracks.
+# Note: For alignment visualization in IGV, upload the .bam and .bai files directly to the platform.
+
