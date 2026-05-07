@@ -4,12 +4,6 @@ mother="$3" # Sample ID of the mother
 CASE="$4" # Name assigned to the trio analysis
 PATRON="$5" # Inheritance filter (pattern used by bcftools)
 
-child="$1"
-father="$2"
-mother="$3"
-CASE="$4"
-PATRON="$5"
-
 # Dynamically create MultiQC config to group paired-end reads and rename IDs to family roles (child/father/mother)
 mkdir -p QC_reports_"${CASE}"
 mkdir -p VCF_results_"${CASE}"
