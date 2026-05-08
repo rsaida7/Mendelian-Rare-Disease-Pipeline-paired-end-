@@ -16,11 +16,13 @@ To use this analysis scheme and the automated scripts, the following materials a
 3.Targeted Regions: A .bed file containing the specific regions of interest.  
 4.Reference Files: Chromosome reference sequences and corresponding Bowtie2 indices.  
 
-## How to use the automayed script
+## How to use the automated script
 To run the automated pipeline, use the following command structure:  
 ```bash
 ./(name of the script) [SampleID_Child] [SampleID_Father] [SampleID_Mother] [TrioName] '[Inheritance_Filter]'
 ```
 ```py
 #Inheritance_Filter: the order of genotypes in the string ($[0]$, $[1]$, $[2]$) must match the order of samples in your .txt file
+#Example[from our analysis]
+./pipeline_paired_end.sh HG00448 HG00449 HG00450 Trio_1 ’GT[0]="AA" && GT[1]="RA" && GT[2]="RA"’
 ```
