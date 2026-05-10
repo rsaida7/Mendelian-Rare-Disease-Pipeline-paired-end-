@@ -26,3 +26,7 @@ To run the automated pipeline, use the following command structure:
 #Example[from our analysis]
 ./pipeline_paired_end.sh HG00448 HG00449 HG00450 Trio_1 ’GT[0]="AA" && GT[1]="RA" && GT[2]="RA"’
 ```
+## Folder structure
+The VCF and MultiQC result folders contain subfolders corresponding to the cases assigned during the project:
+SR — cases assigned to Saida Rozmetova
+IS — cases assigned to Ignacio Sanjuan
