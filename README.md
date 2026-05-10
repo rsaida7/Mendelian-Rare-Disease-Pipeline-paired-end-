@@ -28,5 +28,5 @@ To run the automated pipeline, use the following command structure:
 ```
 ## Folder structure
 The VCF and MultiQC result folders contain subfolders corresponding to the cases assigned during the project:
-SR — cases assigned to Saida Rozmetova
+SR — cases assigned to Saida Rozmetova,
 IS — cases assigned to Ignacio Sanjuan
